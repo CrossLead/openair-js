@@ -12,6 +12,7 @@
   "eqnull": true,
   "node": true,
   "globals": {
+    "Promise"    : false,
     "describe"   : false,
     "it"         : false,
     "before"     : false,

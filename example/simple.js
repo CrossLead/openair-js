@@ -8,6 +8,19 @@
 
 'use strict';
 
-var openairJs = require('../');
+var denodeify = require('denodeify');
+var OpenAir = require('../');
 
-console.log(openairJs()); // "awesome"
+var credentials = require('./credentials.json');
+var config = new OpenAir.Configuration(credentials);
+
+console.log('Creating OpenAir connection');
+
+config.createConnection()
+  .then(function(client) {
+    console.log('WSDL processed. Service description:');
+    console.log(client.describe());
+  })
+  .catch(function(err) {
+    console.error(err);
+  });
