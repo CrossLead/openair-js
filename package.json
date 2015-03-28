@@ -24,9 +24,9 @@
   },
   "devDependencies": {
     "coveralls": "^2.11.2",
-    "doxx": "^1.2.6",
     "gulp": "^3.8.11",
     "gulp-bump": "^0.3.0",
+    "gulp-doxx": "0.0.4",
     "gulp-istanbul": "^0.7.0",
     "gulp-jscs": "^1.4.0",
     "gulp-jshint": "^1.9.4",
